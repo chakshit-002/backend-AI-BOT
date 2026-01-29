@@ -8,7 +8,7 @@ const cors = require('cors')
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin:["https://ask-me-chacksy-ai-chat-bot.netlify.app","http://localhost:5173"],
+    origin:"https://ask-me-chacksy-ai-chat-bot.netlify.app",
     credentials:true
 }))
 
@@ -16,3 +16,4 @@ app.use('/api/auth',authRoutes);
 app.use('/api/chat',chatRoutes);
 
 module.exports = app;
+// ,"http://localhost:5173"]
