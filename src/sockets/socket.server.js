@@ -13,7 +13,7 @@ async function initSocketServer(httpServer) {
     const io = new Server(httpServer, {
         cors: {
             origin: "https://ask-me-chacksy-ai-chat-bot.netlify.app",
-            methods: ["GET", "POST"],
+            methods: ["GET", "POST","PUT", "DELETE"],
             credentials: true
         }
     });
