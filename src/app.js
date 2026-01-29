@@ -9,7 +9,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
     origin:"https://ask-me-chacksy-ai-chat-bot.netlify.app",
-    credentials:true
+    credentials:true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
 }))
 
 app.use('/api/auth',authRoutes);
