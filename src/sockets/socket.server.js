@@ -9,10 +9,10 @@ const chatModel = require('../models/chat.model');
 
 
 async function initSocketServer(httpServer) {
-    // "http://localhost:5173"
+    // "https://ask-me-chacksy-ai-chat-bot.netlify.app"
     const io = new Server(httpServer, {
         cors: {
-            origin: "https://ask-me-chacksy-ai-chat-bot.netlify.app",
+            origin: "http://localhost:5173",
             methods: ["GET", "POST","PUT", "DELETE"],
             credentials: true
         }
